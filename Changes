@@ -1,0 +1,14 @@
+0.02
+
+- Renamed to WebService::StreetMapLink (from WWW::Map).
+
+- When given a country that no subclass can handle, it now simply
+returns false instead of dying.
+
+- Added support for France to Multimap subclass.
+
+
+0.01    2004-07-09
+
+- First release.
+

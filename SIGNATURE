@@ -1,0 +1,40 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.39.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It would check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 2afcab82a2d9361ff70dc17edae4bd55bcec2f36 Build.PL
+SHA1 31ea8b3c7f32a75af62078b42e840ca34378caa6 Changes
+SHA1 f235ba4160673bcb7c9d58c2f09dbc7fc0efadea LICENSE
+SHA1 89b17839fd109e431fd9bc6ee2fa39daab2e54fa MANIFEST
+SHA1 ddff4b0f7358c93f26880482c7138d6c123f6a0a META.yml
+SHA1 1099db72cd05ad1cad02a0b579d5f8c9786e1e92 Makefile.PL
+SHA1 06cbc0877c6a30aa67f1e680c1e4f63e669a00ce README
+SHA1 88bad5852fff6d2c5d12e33ed6dce7f29e5f6258 lib/WebService/StreetMapLink.pm
+SHA1 88f15ea4257682bb2ed9d4e506894a2f0c28b395 lib/WebService/StreetMapLink/MapQuest.pm
+SHA1 a861532eb93d0c02c0d77560e261cc9b7c51a653 lib/WebService/StreetMapLink/Multimap.pm
+SHA1 d35e4612852006308ff119c2c725d2c7886343d5 lib/WebService/StreetMapLink/Streetdirectory.pm
+SHA1 2d4993e7c83c024a18f299c1c06f2784215a5033 t/00-load.t
+SHA1 705713ad8f1696b51b11c1da8e60bf7ebbf312a8 t/01-mapquest.t
+SHA1 330fc79f00a5807dc7be8bd3e6b571eef63cf225 t/02-multimap.t
+SHA1 d15455c9318bff4a7abb5e3fcadc3f1a00c53309 t/03-streetdirectory.t
+SHA1 97e9f954115b52d01d017a7a420209dad2b778aa t/pod-coverage.t
+SHA1 e9c6a5881fc60173fbc8d479c1afd2ce3b43bef1 t/pod.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.2.4 (GNU/Linux)
+
+iD8DBQFA8WzM3Or3ZzQuifMRAs4NAKCviGggKl5uSCIKxnCXIhtcgQGX8gCgsxKH
+oGImfZtXwUl01WMhiS7904Y=
+=jOA/
+-----END PGP SIGNATURE-----
