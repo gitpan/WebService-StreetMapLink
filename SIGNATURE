@@ -14,14 +14,14 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 2afcab82a2d9361ff70dc17edae4bd55bcec2f36 Build.PL
-SHA1 e4b509625a4bfa87c96e0f4d127c7912626689e5 Changes
+SHA1 ebc7c1ad18e6a023c3c45100946d648f86a1205a Build.PL
+SHA1 331db4439ab1bb7112f4db87125d8e589d77fdf8 Changes
 SHA1 f235ba4160673bcb7c9d58c2f09dbc7fc0efadea LICENSE
 SHA1 be13265060bb8d3389dbbf270b80dd0d91465c22 MANIFEST
-SHA1 c8148562f0f4e3872cf7f99c0af8e14c1b01fcf4 META.yml
+SHA1 045ee7ffb4851640df29c47ebfba928d089975b7 META.yml
 SHA1 a359d4072690a21ce63e4b393bdbc19d72b6be5a Makefile.PL
 SHA1 06cbc0877c6a30aa67f1e680c1e4f63e669a00ce README
-SHA1 1cbeeeb1c635a3e933c9a4aec4826bbf0b44f825 lib/WebService/StreetMapLink.pm
+SHA1 6a48a1d29b963d3f8cff7f147003f949b4f790e1 lib/WebService/StreetMapLink.pm
 SHA1 a7fe6a358e01574322f71b9f60cadc180436fa62 lib/WebService/StreetMapLink/Catcha.pm
 SHA1 88f15ea4257682bb2ed9d4e506894a2f0c28b395 lib/WebService/StreetMapLink/MapQuest.pm
 SHA1 a861532eb93d0c02c0d77560e261cc9b7c51a653 lib/WebService/StreetMapLink/Multimap.pm
@@ -36,7 +36,7 @@ SHA1 e9c6a5881fc60173fbc8d479c1afd2ce3b43bef1 t/pod.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.2.5 (GNU/Linux)
 
-iD8DBQFBteFL3Or3ZzQuifMRAiaGAJ9ak7iaiW0ZrJvmOvtdtXgeQVidCwCglv0G
-5mP3XXFqYx/ZyufTeCVVgts=
-=6GpV
+iD8DBQFBtgJd3Or3ZzQuifMRAuC6AKCroZWnPy6Lv88DThJU1EIWSWctTACg2d7d
+YwG8zrFk2mOPWNStf1M/X7I=
+=HpkK
 -----END PGP SIGNATURE-----

@@ -1,18 +1,19 @@
 --- #YAML:1.0
 name: WebService-StreetMapLink
-version: 0.03
+version: 0.04
 author:
   - David Rolsky <autarch@urth.org>
 abstract: An API for generating links to online map services
 license: perl
 requires:
+  Class::Factory::Util: 0
   Geography::States: 0
   Params::Validate: 0
   Test::More: 0
 provides:
   WebService::StreetMapLink:
     file: lib/WebService/StreetMapLink.pm
-    version: 0.03
+    version: 0.04
   WebService::StreetMapLink::Catcha:
     file: lib/WebService/StreetMapLink/Catcha.pm
   WebService::StreetMapLink::MapQuest:

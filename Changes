@@ -1,3 +1,8 @@
+0.04    2004-12-07
+
+- A prereq, Class::Factory::Util, was missing from the Build.PL file.
+
+
 0.03    2004-12-07
 
 - streetdirectory.com.sg now forbids deep linking in their TOS, and
