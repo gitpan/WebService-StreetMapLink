@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name: WebService-StreetMapLink
-version: 0.04
+version: 0.05
 author:
   - David Rolsky <autarch@urth.org>
 abstract: An API for generating links to online map services
@@ -13,7 +13,7 @@ requires:
 provides:
   WebService::StreetMapLink:
     file: lib/WebService/StreetMapLink.pm
-    version: 0.04
+    version: 0.05
   WebService::StreetMapLink::Catcha:
     file: lib/WebService/StreetMapLink/Catcha.pm
   WebService::StreetMapLink::MapQuest:
@@ -22,4 +22,4 @@ provides:
     file: lib/WebService/StreetMapLink/Multimap.pm
   WebService::StreetMapLink::Streetdirectory:
     file: lib/WebService/StreetMapLink/Streetdirectory.pm
-generated_by: Module::Build version 0.26
+generated_by: Module::Build version 0.2608

@@ -15,6 +15,7 @@ use URI::QueryParam;
                                               city    => 'Testville',
                                               state   => 'MN',
                                               postal_code => '12345',
+                                              subclass => 'MapQuest',
                                             );
 
     my $uri = $map->uri;
@@ -104,6 +105,7 @@ use URI::QueryParam;
                                               state   => 'MN',
                                               postal_code => '12345',
                                               zoom    => 4,
+                                              subclass => 'MapQuest',
                                             );
 
     my $uri = $map->uri;

@@ -1,3 +1,12 @@
+0.05    2005-02-08
+
+- Added a Priority() class method to handle the case when two
+subclasses handle the same country(ies).
+
+- Support for Google Maps in the USA.  Google has a higher priority
+than Mapquest.
+
+
 0.04    2004-12-07
 
 - A prereq, Class::Factory::Util, was missing from the Build.PL file.
