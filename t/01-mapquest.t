@@ -11,11 +11,11 @@ use URI::QueryParam;
 
 {
     my $map = WebService::StreetMapLink->new( country => 'usa',
-                             address => '100 Some Street',
-                             city    => 'Testville',
-                             state   => 'MN',
-                             postal_code => '12345',
-                           );
+                                              address => '100 Some Street',
+                                              city    => 'Testville',
+                                              state   => 'MN',
+                                              postal_code => '12345',
+                                            );
 
     my $uri = $map->uri;
 
@@ -45,11 +45,11 @@ use URI::QueryParam;
 
 {
     my $map = WebService::StreetMapLink->new( country => 'canada',
-                             address => '500 Big Ave',
-                             city    => 'Oot',
-                             state   => 'Quebec',
-                             postal_code => '5B1 A9Q',
-                           );
+                                              address => '500 Big Ave',
+                                              city    => 'Oot',
+                                              state   => 'Quebec',
+                                              postal_code => '5B1 A9Q',
+                                            );
 
     my $uri = $map->uri;
 
@@ -80,10 +80,10 @@ use URI::QueryParam;
 
 {
     my $map = WebService::StreetMapLink->new( country => 'canada',
-                             address => "500 L'Hôtel Ave",
-                             city    => 'Oot',
-                             state   => 'Québec',
-                             postal_code => '5B1 A9Q',
+                                              address => "500 L'Hôtel Ave",
+                                              city    => 'Oot',
+                                              state   => 'Québec',
+                                              postal_code => '5B1 A9Q',
                            );
 
     my $uri = $map->uri;
@@ -99,12 +99,12 @@ use URI::QueryParam;
 
 {
     my $map = WebService::StreetMapLink->new( country => 'usa',
-                             address => '100 Some Street',
-                             city    => 'Testville',
-                             state   => 'MN',
-                             postal_code => '12345',
-                             zoom    => 4,
-                           );
+                                              address => '100 Some Street',
+                                              city    => 'Testville',
+                                              state   => 'MN',
+                                              postal_code => '12345',
+                                              zoom    => 4,
+                                            );
 
     my $uri = $map->uri;
 

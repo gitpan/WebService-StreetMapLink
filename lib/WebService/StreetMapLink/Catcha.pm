@@ -1,4 +1,4 @@
-package WebService::StreetMapLink::Streetdirectory;
+package WebService::StreetMapLink::Catcha;
 
 use strict;
 
@@ -7,13 +7,13 @@ use Geography::States;
 use base 'WebService::StreetMapLink';
 
 
-my %Query = ( australia => { StreetType => 'ALL' },
+my %Query = ( singapore => {},
             );
 
-my %Host  = ( australia => 'www.street-directory.com.au',
+my %Host  = ( singapore => 'www.catcha.com.sg',
             );
 
-my %Path  = ( australia => '/aus_new/index.cgi',
+my %Path  = ( singapore => '/cgi-bin/maps/parseform.cgi',
             );
 
 sub Countries { keys %Query }
@@ -47,44 +47,6 @@ sub _singapore_query
     return 1;
 }
 
-sub _australia_query
-{
-    shift;
-    my ( $p, $q ) = @_;
-
-    return unless defined $p->{state};
-
-    return unless defined $p->{address};
-
-    return unless defined $p->{postal_code} || defined $p->{city};
-
-    $p->{address} =~ s/\s*\b(?:road|rd|street|st|ave|av|avenue|dr|
-                               drive|ct|court|freeway|highway|
-                               blvd|boulevard|ln|lane)\b//ix;
-
-    return unless $p->{address} =~ /^(\d+)(?:-\d+)?\s+(.+)/;
-
-    $q->{StreetNo}   = $1;
-    $q->{StreetName} = $2;
-
-    $q->{Suburb} = $p->{city}
-        if defined $p->{city};
-
-    $q->{PostCode} = $p->{postal_code}
-        if defined $p->{postal_code};
-
-    if ( length $p->{state} > 3 )
-    {
-        $p->{state} = Geography::States->new('Australia')->state( $p->{state} );
-    }
-
-    return unless $p->{state};
-
-    $q->{CountryName} = $p->{state};
-
-    return 1;
-}
-
 
 1;
 
@@ -92,7 +54,7 @@ __END__
 
 =head1 NAME
 
-WebService::StreetMapLink::Streetdirectory - A WebService::StreetMapLink subclass for streetdirectory.com
+WebService::StreetMapLink::Catcha - A WebService::StreetMapLink subclass for catcha.com
 
 =head1 SYNOPSIS
 
@@ -111,20 +73,16 @@ WebService::StreetMapLink::Streetdirectory - A WebService::StreetMapLink subclas
 
 =head1 DESCRIPTION
 
-This subclass generates links to streetdirectory.com.  There are
-several host names for this service, each for a different country.
+This subclass generates links to catcha.com.  There are several host
+names for this service, each for a different country.
 
 =head1 COUNTRIES
 
-This subclass handles Australia.
+This subclass handles Singapore.
 
 =head1 new() PARAMETERS
 
-For Australia, you must provide "address", "state", and either "city"
-or "postal_code".  Some additional parsing is done on the address to
-remove the "street/ave/etc" portion, and to separate out the street
-number from the name.  If this fails, then an object cannot be
-created.
+For Singapore, all that is required is a "postal_code".
 
 =head1 AUTHOR
 

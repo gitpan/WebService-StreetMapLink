@@ -11,11 +11,11 @@ use URI::QueryParam;
 
 {
     my $map = WebService::StreetMapLink->new( country => 'switzerland',
-                             address => 'rue de Paquis 25',
-                             city    => 'Geneva',
-                             state   => 'Geneve',
-                             postal_code => '1201',
-                           );
+                                              address => 'rue de Paquis 25',
+                                              city    => 'Geneva',
+                                              state   => 'Geneve',
+                                              postal_code => '1201',
+                                            );
 
     my $uri = $map->uri;
 

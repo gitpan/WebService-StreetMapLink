@@ -2,7 +2,7 @@
 
 use strict;
 
-use Test::More tests => 18;
+use Test::More tests => 12;
 
 use WebService::StreetMapLink;
 
@@ -11,11 +11,11 @@ use URI::QueryParam;
 
 {
     my $map = WebService::StreetMapLink->new( country => 'australia',
-                             address => '606 Station Street',
-                             city    => 'Box Hill',
-                             state   => 'Victoria',
-                             postal_code => '3128',
-                           );
+                                              address => '606 Station Street',
+                                              city    => 'Box Hill',
+                                              state   => 'Victoria',
+                                              postal_code => '3128',
+                                            );
 
     my $uri = $map->uri;
 
@@ -45,60 +45,21 @@ use URI::QueryParam;
 
 {
     my $map = WebService::StreetMapLink->new( country => 'australia',
-                             address => 'ABC Station Street',
-                             city    => 'Box Hill',
-                             state   => 'Victoria',
-                             postal_code => '3128',
-                           );
+                                              address => 'ABC Station Street',
+                                              city    => 'Box Hill',
+                                              state   => 'Victoria',
+                                              postal_code => '3128',
+                                            );
 
     ok( ! $map, 'No map object was returned.' );
 }
 
 {
     my $map = WebService::StreetMapLink->new( country => 'australia',
-                             address => '606 Station Street',
-                             city    => 'Box Hill',
-                             postal_code => '3128',
-                           );
-
-    ok( ! $map, 'No map object was returned.' );
-}
-
-{
-    my $map = WebService::StreetMapLink->new( country => 'singapore',
-                             address => '208 Jalan Besar',
-                             city    => 'Singapore',
-                             state   => 'Singapore',
-                             postal_code => '208894',
-                           );
-
-    my $uri = $map->uri;
-
-    ok( $uri, 'some sort of url was generated' );
-
-    my $obj = $map->uri_object;
-
-    is( $obj->scheme, 'http', 'URL scheme is http' );
-
-    is( $obj->host, 'www.streetdirectory.com.sg', 'URL host is www.streetdirectory.com.sg' );
-
-    is( $obj->path, '/map.jsp', 'URL path is /map.jsp' );
-
-    my %expect = ( postalcode => '208894',
-                 );
-
-    while ( my ( $k, $v ) = each %expect )
-    {
-        is( $obj->query_param($k), $v, "URL query param $k should be $v" );
-    }
-}
-
-{
-    my $map = WebService::StreetMapLink->new( country => 'singapore',
-                             address => '208 Jalan Besar',
-                             city    => 'Singapore',
-                             state   => 'Singapore',
-                           );
+                                              address => '606 Station Street',
+                                              city    => 'Box Hill',
+                                              postal_code => '3128',
+                                            );
 
     ok( ! $map, 'No map object was returned.' );
 }
