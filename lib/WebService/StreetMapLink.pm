@@ -4,7 +4,7 @@ use strict;
 
 use vars qw($VERSION);
 
-$VERSION = 0.06;
+$VERSION = 0.07;
 
 use Class::Factory::Util;
 use URI;
@@ -97,6 +97,11 @@ sub _sanitize_country
     if ( $country =~ /united\s+states/i )
     {
         $country = 'usa';
+    }
+
+    if ( $country =~ /united\s+kingdom/i )
+    {
+        $country = 'uk';
     }
 
     return lc $country;

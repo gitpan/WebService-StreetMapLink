@@ -13,7 +13,7 @@ my @Accents = ( [ qr/[\xE0-\xE2]/ => 'a' ],
                 [ qr/\xF4/        => 'o' ],
               );
 
-sub Countries { 'usa' }
+sub Countries { 'usa', 'uk' }
 
 sub Priority { 99 }
 
@@ -35,7 +35,9 @@ sub new
     return
         unless ( defined $p{address}
                  &&
-                 ( ( defined $p{city} && defined $p{state} )
+                 ( ( defined $p{city}
+                     && ( defined $p{state} || $p{country} ne 'usa' )
+                   )
                    ||
                    defined $p{postal_code}
                  )
@@ -44,7 +46,8 @@ sub new
     return if $p{address} =~ /p\.?o\.\s+box/i;
 
     my $q =
-        ( join ',', grep { defined }
+        ( join ',',
+          grep { defined }
           map { $p{$_} } qw( address city state postal_code )
         );
 
@@ -84,8 +87,9 @@ This subclass generates links to Google Maps.
 
 =head1 COUNTRIES
 
-This subclass handles USA.  It has a higher priority than the MapQuest
-subclass, so it is preferred for addresses in the USA.
+This subclass handles the USA and UK.  It has a higher priority than
+the MapQuest subclass, so it is preferred for addresses in the USA.
+For the UK, the country should be given as "uk" or "united kingdom".
 
 =head1 new() PARAMETERS
 
