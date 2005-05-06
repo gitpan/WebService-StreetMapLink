@@ -13,7 +13,7 @@ my @Accents = ( [ qr/[\xE0-\xE2]/ => 'a' ],
                 [ qr/\xF4/        => 'o' ],
               );
 
-sub Countries { 'usa', 'uk' }
+sub Countries { 'usa', 'uk', 'canada' }
 
 sub Priority { 99 }
 
@@ -48,7 +48,7 @@ sub new
     my $q =
         ( join ',',
           grep { defined }
-          map { $p{$_} } qw( address city state postal_code )
+          map { $p{$_} } qw( address city state postal_code country )
         );
 
     return bless { host  => 'maps.google.com',

@@ -15,30 +15,30 @@ not run its Makefile.PL or Build.PL.
 Hash: SHA1
 
 SHA1 ebc7c1ad18e6a023c3c45100946d648f86a1205a Build.PL
-SHA1 13426e1631b5864d632d8f672544c1e7c5489fee Changes
+SHA1 42058b9bd82cb5537f5339e363f2c4c2e15df51d Changes
 SHA1 f235ba4160673bcb7c9d58c2f09dbc7fc0efadea LICENSE
 SHA1 be3a889d26115a88617c1209a8f6e3b75a8f72aa MANIFEST
-SHA1 ce4132a5bdbc13b22137c3d7cf3309ebf914fda6 META.yml
+SHA1 0c7cb7938e0de8266efebf11139f920909896557 META.yml
 SHA1 a359d4072690a21ce63e4b393bdbc19d72b6be5a Makefile.PL
 SHA1 06cbc0877c6a30aa67f1e680c1e4f63e669a00ce README
-SHA1 c67fc09502b34e7a96e1bdaadfe512d69aad71b7 lib/WebService/StreetMapLink.pm
+SHA1 13dc087253188686818061b4e69a111a05a519a6 lib/WebService/StreetMapLink.pm
 SHA1 dcaf637764b68cec5e73d01770279deadc74fde9 lib/WebService/StreetMapLink/Catcha.pm
-SHA1 ab962a8fbfd8a6873d52dad983f5e2d7ee355f21 lib/WebService/StreetMapLink/Google.pm
+SHA1 1756504b9c5930d388ad7e2307c50da12b5f4f1c lib/WebService/StreetMapLink/Google.pm
 SHA1 84d2f77ed743612a8f54912cc15b413ac846b998 lib/WebService/StreetMapLink/MapQuest.pm
 SHA1 c3fca9d387fd8e5ba4255587b920f12c69da504a lib/WebService/StreetMapLink/Multimap.pm
 SHA1 9bb767ccde4b54877fa189cff710ab15b616e01d lib/WebService/StreetMapLink/Streetdirectory.pm
 SHA1 2d4993e7c83c024a18f299c1c06f2784215a5033 t/00-load.t
-SHA1 aa1d9567b549e6b8035a29fb8218836844e25465 t/01-mapquest.t
+SHA1 75ef526fcb1a83a075ae0a85d6e3f084a4b431ac t/01-mapquest.t
 SHA1 f52293d06b6f68ecf60f0e89b8ff73f9adcdb539 t/02-multimap.t
 SHA1 5a48d367bdabbe9045c2849c9003f54921c7ddff t/03-streetdirectory.t
 SHA1 c85fc06af60565f69328c18f0c337c4fd311e81f t/04-catcha.t
-SHA1 a02fced9ed30f61fc497ca86a044929277d011cb t/05-google.t
+SHA1 e0bde7b4f2d3af9a761bd3041bd1263f4e74d85a t/05-google.t
 SHA1 001774e8646fbb745b8c312a57f59c18cb68ab1f t/pod-coverage.t
 SHA1 e9c6a5881fc60173fbc8d479c1afd2ce3b43bef1 t/pod.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.0 (GNU/Linux)
 
-iD8DBQFCZnrz3Or3ZzQuifMRAgQaAJkBHAWOD33oXqW3kAmiaVYfrB0c2ACcCWHB
-A9jHJe/rRk0xolEVI0C1ef8=
-=/RvD
+iD8DBQFCfAPG3Or3ZzQuifMRAjkiAKCTkOxdgmEI6eNKVsbgNJ2yShY4+wCgg5PQ
+Uk0MW8xxmYyYCDjDQCAqdwY=
+=xhVe
 -----END PGP SIGNATURE-----

@@ -31,7 +31,7 @@ use URI::QueryParam;
 
     is( $obj->path, '/maps', 'URL path is /maps' );
 
-    my %expect = ( q => join ',', map { $p{$_} } qw( address city state postal_code ) );
+    my %expect = ( q => join ',', map { $p{$_} } qw( address city state postal_code country ) );
 
     while ( my ( $k, $v ) = each %expect )
     {
@@ -60,7 +60,7 @@ use URI::QueryParam;
 
     is( $obj->path, '/maps', 'URL path is /maps' );
 
-    my %expect = ( q => join ',', map { $p{$_} } qw( address city postal_code ) );
+    my %expect = ( q => join ',', map { $p{$_} } qw( address city postal_code country ) );
 
     while ( my ( $k, $v ) = each %expect )
     {

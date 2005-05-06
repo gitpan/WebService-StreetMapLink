@@ -50,6 +50,7 @@ use URI::QueryParam;
                                               city    => 'Oot',
                                               state   => 'Quebec',
                                               postal_code => '5B1 A9Q',
+                                              subclass => 'MapQuest',
                                             );
 
     my $uri = $map->uri;
@@ -85,6 +86,7 @@ use URI::QueryParam;
                                               city    => 'Oot',
                                               state   => 'Québec',
                                               postal_code => '5B1 A9Q',
+                                              subclass => 'MapQuest',
                            );
 
     my $uri = $map->uri;
