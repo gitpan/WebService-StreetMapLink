@@ -45,6 +45,8 @@ sub new
 
     return if $p{address} =~ /p\.?o\.\s+box/i;
 
+    $p{postal_code} =~ s/-\d{4}$//;
+
     my $q =
         ( join ',',
           grep { defined }

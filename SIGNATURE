@@ -15,15 +15,15 @@ not run its Makefile.PL or Build.PL.
 Hash: SHA1
 
 SHA1 ebc7c1ad18e6a023c3c45100946d648f86a1205a Build.PL
-SHA1 42058b9bd82cb5537f5339e363f2c4c2e15df51d Changes
+SHA1 bf0a86c7f707aeab94e5634c2ed792a3365a8bca Changes
 SHA1 f235ba4160673bcb7c9d58c2f09dbc7fc0efadea LICENSE
 SHA1 be3a889d26115a88617c1209a8f6e3b75a8f72aa MANIFEST
-SHA1 0c7cb7938e0de8266efebf11139f920909896557 META.yml
+SHA1 d2718a8ca343d1b7190d4ccdcec085e926f6e61f META.yml
 SHA1 a359d4072690a21ce63e4b393bdbc19d72b6be5a Makefile.PL
 SHA1 06cbc0877c6a30aa67f1e680c1e4f63e669a00ce README
-SHA1 13dc087253188686818061b4e69a111a05a519a6 lib/WebService/StreetMapLink.pm
+SHA1 c8613f4fe451de477c2093da044675a7ae911e25 lib/WebService/StreetMapLink.pm
 SHA1 dcaf637764b68cec5e73d01770279deadc74fde9 lib/WebService/StreetMapLink/Catcha.pm
-SHA1 1756504b9c5930d388ad7e2307c50da12b5f4f1c lib/WebService/StreetMapLink/Google.pm
+SHA1 5e61ee70690ff6b1dbdf9031d921860c4485c7a3 lib/WebService/StreetMapLink/Google.pm
 SHA1 84d2f77ed743612a8f54912cc15b413ac846b998 lib/WebService/StreetMapLink/MapQuest.pm
 SHA1 c3fca9d387fd8e5ba4255587b920f12c69da504a lib/WebService/StreetMapLink/Multimap.pm
 SHA1 9bb767ccde4b54877fa189cff710ab15b616e01d lib/WebService/StreetMapLink/Streetdirectory.pm
@@ -32,13 +32,13 @@ SHA1 75ef526fcb1a83a075ae0a85d6e3f084a4b431ac t/01-mapquest.t
 SHA1 f52293d06b6f68ecf60f0e89b8ff73f9adcdb539 t/02-multimap.t
 SHA1 5a48d367bdabbe9045c2849c9003f54921c7ddff t/03-streetdirectory.t
 SHA1 c85fc06af60565f69328c18f0c337c4fd311e81f t/04-catcha.t
-SHA1 e0bde7b4f2d3af9a761bd3041bd1263f4e74d85a t/05-google.t
+SHA1 b16383bb2d7470902f0b57f7877653b9854ec51e t/05-google.t
 SHA1 001774e8646fbb745b8c312a57f59c18cb68ab1f t/pod-coverage.t
 SHA1 e9c6a5881fc60173fbc8d479c1afd2ce3b43bef1 t/pod.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.0 (GNU/Linux)
+Version: GnuPG v1.2.5 (GNU/Linux)
 
-iD8DBQFCfAPG3Or3ZzQuifMRAjkiAKCTkOxdgmEI6eNKVsbgNJ2yShY4+wCgg5PQ
-Uk0MW8xxmYyYCDjDQCAqdwY=
-=xhVe
+iD8DBQFCkdER3Or3ZzQuifMRApIhAJ98TJsbRaLQjBI0lfRVxiHq6Vf8NQCffTOf
+qoCfxxz6B2zvOdLOE/Bb4Fk=
+=i+Lg
 -----END PGP SIGNATURE-----

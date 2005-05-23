@@ -1,6 +1,6 @@
 ---
 name: WebService-StreetMapLink
-version: 0.08
+version: 0.09
 author:
   - David Rolsky <autarch@urth.org>
 abstract: An API for generating links to online map services
@@ -13,7 +13,7 @@ requires:
 provides:
   WebService::StreetMapLink:
     file: lib/WebService/StreetMapLink.pm
-    version: 0.08
+    version: 0.09
   WebService::StreetMapLink::Catcha:
     file: lib/WebService/StreetMapLink/Catcha.pm
   WebService::StreetMapLink::Google:

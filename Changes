@@ -1,3 +1,8 @@
+0.09    2005-05-23
+
+- Only use first 5 digits of US zip codes for Google links.
+
+
 0.08    2005-05-06
 
 - Prefer Google to MapQuest for Canada.
