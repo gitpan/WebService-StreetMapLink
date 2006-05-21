@@ -4,6 +4,7 @@ use strict;
 
 use base 'WebService::StreetMapLink';
 
+
 my %Query = ( switzerland => { db       => 'CH',
                                client   => 'public',
                                advanced => '',
@@ -17,6 +18,7 @@ my %Query = ( switzerland => { db       => 'CH',
             );
 
 sub Countries { keys %Query }
+__PACKAGE__->RegisterSubclass();
 
 sub new
 {

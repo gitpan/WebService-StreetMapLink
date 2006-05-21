@@ -17,6 +17,7 @@ my %Path  = ( australia => '/aus_new/index.cgi',
             );
 
 sub Countries { keys %Query }
+__PACKAGE__->RegisterSubclass();
 
 sub new
 {

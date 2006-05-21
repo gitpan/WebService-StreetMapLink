@@ -11,7 +11,9 @@ my $builder =
                                    'Geography::States'    => 0,
                                    'Params::Validate'     => 0,
                                    'Test::More'           => 0,
+                                   'URI'                  => 1.28
                                  },
+          build_requires      => { 'Module::Build' => 0 },
           add_to_cleanup      => [ 'WebService-StreetMapLink-*' ],
           create_makefile_pl  => 'passthrough',
           sign                => 1,

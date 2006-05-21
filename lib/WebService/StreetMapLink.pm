@@ -4,7 +4,7 @@ use strict;
 
 use vars qw($VERSION);
 
-$VERSION = 0.09;
+$VERSION = 0.10;
 
 use Class::Factory::Util;
 use URI;
@@ -14,35 +14,28 @@ use Params::Validate qw( validate_with SCALAR UNDEF );
 
 my %CountryToClass;
 
-sub register_subclass
+sub RegisterSubclass
 {
-    shift;
-    my $class = shift;
+    my $class    = shift;
+    my $priority = shift || 100;
 
     foreach my $country ( map { lc } $class->Countries )
     {
-        push @{ $CountryToClass{$country} }, $class;
+        push @{ $CountryToClass{$country} },
+            { class    => $class,
+              priority => $priority,
+            };
     }
 }
 
-sub Priority { 100 }
-
 BEGIN
 {
-    my @classes;
-
     for my $class ( map { __PACKAGE__ . '::' . $_ } __PACKAGE__->subclasses )
     {
         eval "use $class";
         die $@ if $@;
-
-        push @classes, { class => $class, priority => $class->Priority };
     }
-
-    __PACKAGE__->register_subclass( $_->{class} )
-        for sort { $a->{priority} <=> $b->{priority} } @classes;
 }
-
 
 use constant NEW_SPEC => { country     => { type => SCALAR },
                            address     => { type => UNDEF | SCALAR, optional => 1 },
@@ -81,7 +74,9 @@ sub new
 
         return unless exists $CountryToClass{$country};
 
-        $subclass = $CountryToClass{$country}[0];
+        my $entry =
+            (sort { $a->{priority} <=> $b->{priority} } @{ $CountryToClass{$country} })[0];
+        $subclass = $entry->{class};
 
         $p{country} = $country;
     }
@@ -228,21 +223,15 @@ Creating a subclass that implements map links is quite simple.  The
 subclass needs to provide a few methods.  See the subclasses
 distributed with this module for examples.
 
-If your subclass doesn't begin with C<WebService::StreetMapLink::>, it
-must call
-C<< WebService::StreetMapLink->register_subclass(__PACKAGE__) >> when
-loaded.
+All subclasses must call C<<
+WebService::StreetMapLink->RegisterSubclass() >> when loaded. This
+method accepts one optional argument, the subclass's priority. If not
+provided, this defaults to 100 (lowest priority).
 
 =head2 Countries()
 
 This class method should return an array of country names which the
 subclass can handle.
-
-=head2 Priority()
-
-Defaults to 100.  Set this to a higher value if your subclass provides
-map links for the same country as another subclass.  The priority goes
-from 1 (highest) to 100 (lowest).
 
 =head2 new()
 

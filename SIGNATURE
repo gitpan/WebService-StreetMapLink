@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.44.
+signed via the Module::Signature module, version 0.50.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,31 +14,32 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 ebc7c1ad18e6a023c3c45100946d648f86a1205a Build.PL
-SHA1 bf0a86c7f707aeab94e5634c2ed792a3365a8bca Changes
+SHA1 6779fd2f2dc0054c9f047d1d662c6ed03d2bb6fa Build.PL
+SHA1 5457f44d5ea5261093f8619d47fd143da15577c5 Changes
 SHA1 f235ba4160673bcb7c9d58c2f09dbc7fc0efadea LICENSE
-SHA1 be3a889d26115a88617c1209a8f6e3b75a8f72aa MANIFEST
-SHA1 d2718a8ca343d1b7190d4ccdcec085e926f6e61f META.yml
-SHA1 a359d4072690a21ce63e4b393bdbc19d72b6be5a Makefile.PL
+SHA1 b0c92514d8486b3260de33f646988508c7fd44d8 MANIFEST
+SHA1 a0a134b9abb48742f1507123f01483f262f74da3 META.yml
+SHA1 cd14ada78fb37a0d926edd86eddcdf7f939de582 Makefile.PL
 SHA1 06cbc0877c6a30aa67f1e680c1e4f63e669a00ce README
-SHA1 c8613f4fe451de477c2093da044675a7ae911e25 lib/WebService/StreetMapLink.pm
-SHA1 dcaf637764b68cec5e73d01770279deadc74fde9 lib/WebService/StreetMapLink/Catcha.pm
-SHA1 5e61ee70690ff6b1dbdf9031d921860c4485c7a3 lib/WebService/StreetMapLink/Google.pm
-SHA1 84d2f77ed743612a8f54912cc15b413ac846b998 lib/WebService/StreetMapLink/MapQuest.pm
-SHA1 c3fca9d387fd8e5ba4255587b920f12c69da504a lib/WebService/StreetMapLink/Multimap.pm
-SHA1 9bb767ccde4b54877fa189cff710ab15b616e01d lib/WebService/StreetMapLink/Streetdirectory.pm
+SHA1 44c20400fb3cbca08c7eecc10d76c59954b368d4 lib/WebService/StreetMapLink.pm
+SHA1 4e2d6914a4233a0deff088f165c9e4054466968a lib/WebService/StreetMapLink/Catcha.pm
+SHA1 835bf444fb62f418faecf69645683e810bf669ac lib/WebService/StreetMapLink/Google.pm
+SHA1 42db09b6df7ab493990cd21180e3452ffc0d11f3 lib/WebService/StreetMapLink/MapQuest.pm
+SHA1 958cfcda55633b55b3c04f7442ac705767ffdc21 lib/WebService/StreetMapLink/Multimap.pm
+SHA1 d2a7df85b9238b75cb5b12651c4da5a2944e8c14 lib/WebService/StreetMapLink/Streetdirectory.pm
 SHA1 2d4993e7c83c024a18f299c1c06f2784215a5033 t/00-load.t
 SHA1 75ef526fcb1a83a075ae0a85d6e3f084a4b431ac t/01-mapquest.t
 SHA1 f52293d06b6f68ecf60f0e89b8ff73f9adcdb539 t/02-multimap.t
 SHA1 5a48d367bdabbe9045c2849c9003f54921c7ddff t/03-streetdirectory.t
 SHA1 c85fc06af60565f69328c18f0c337c4fd311e81f t/04-catcha.t
 SHA1 b16383bb2d7470902f0b57f7877653b9854ec51e t/05-google.t
-SHA1 001774e8646fbb745b8c312a57f59c18cb68ab1f t/pod-coverage.t
+SHA1 1135fa0cf3588c704ac666dcda4a2f096988cfb1 t/06-subclass-direct.t
+SHA1 9547fb0b6dca434f173b0d622a7f3a02685a9d94 t/pod-coverage.t
 SHA1 e9c6a5881fc60173fbc8d479c1afd2ce3b43bef1 t/pod.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.2.5 (GNU/Linux)
+Version: GnuPG v1.4.2.2 (GNU/Linux)
 
-iD8DBQFCkdER3Or3ZzQuifMRApIhAJ98TJsbRaLQjBI0lfRVxiHq6Vf8NQCffTOf
-qoCfxxz6B2zvOdLOE/Bb4Fk=
-=i+Lg
+iD8DBQFEcKZZ3Or3ZzQuifMRAklFAJ4ma2W5N6Ec5MG13BwZczHRryI+8wCffR7h
+JJMozSPknwUTrDb+KqvbwWY=
+=ICGT
 -----END PGP SIGNATURE-----

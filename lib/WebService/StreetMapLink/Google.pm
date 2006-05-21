@@ -5,6 +5,7 @@ use strict;
 use Geography::States;
 
 use base 'WebService::StreetMapLink';
+__PACKAGE__->RegisterSubclass(99);
 
 
 my @Accents = ( [ qr/[\xE0-\xE2]/ => 'a' ],
@@ -45,7 +46,8 @@ sub new
 
     return if $p{address} =~ /p\.?o\.\s+box/i;
 
-    $p{postal_code} =~ s/-\d{4}$//;
+    $p{postal_code} =~ s/-\d{4}$//
+        if defined $p{postal_code};
 
     my $q =
         ( join ',',
@@ -89,9 +91,10 @@ This subclass generates links to Google Maps.
 
 =head1 COUNTRIES
 
-This subclass handles the USA and UK.  It has a higher priority than
-the MapQuest subclass, so it is preferred for addresses in the USA.
-For the UK, the country should be given as "uk" or "united kingdom".
+This subclass handles the USA and UK.  It's priority (99), is higher
+than the MapQuest subclass, so it is preferred for addresses in the
+USA.  For the UK, the country should be given as "uk" or "united
+kingdom".
 
 =head1 new() PARAMETERS
 

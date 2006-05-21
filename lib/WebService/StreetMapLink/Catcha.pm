@@ -17,6 +17,7 @@ my %Path  = ( singapore => '/cgi-bin/maps/parseform.cgi',
             );
 
 sub Countries { keys %Query }
+__PACKAGE__->RegisterSubclass();
 
 sub new
 {

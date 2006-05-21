@@ -1,3 +1,16 @@
+0.10
+
+* Subclasses now must call RegisterSubclass() to register
+themselves. This is backwards-incompatible with previous versions. If
+you have a local subclass you are using, it will stop working unless
+you change it.
+
+- The above change makes it possible to load and use a subclass
+directly. Reported by Mark Stosberg.
+
+- Added missing URI 1.28 prereq.
+
+
 0.09    2005-05-23
 
 - Only use first 5 digits of US zip codes for Google links.

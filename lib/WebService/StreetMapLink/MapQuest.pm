@@ -5,6 +5,7 @@ use strict;
 use Geography::States;
 
 use base 'WebService::StreetMapLink';
+__PACKAGE__->RegisterSubclass();
 
 
 my %Query = ( usa    => { countryid => 'US',

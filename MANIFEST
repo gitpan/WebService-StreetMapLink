@@ -17,6 +17,7 @@ t/02-multimap.t
 t/03-streetdirectory.t
 t/04-catcha.t
 t/05-google.t
+t/06-subclass-direct.t
 t/pod-coverage.t
 t/pod.t
 SIGNATURE    Added here by Module::Build
