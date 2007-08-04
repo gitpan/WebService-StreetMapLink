@@ -1,3 +1,11 @@
+0.21   2007-08-04
+
+- Apparently Google has street maps for many more countries than are
+  listed on the wikipedia page I looked at. Added Austria, Brazil,
+  Denmark, Czech Republic, Hungary, Ireland, Puerto Rico (treated as a
+  country), and Sweden.
+
+
 0.2    2007-08-04
 
 - Added a service_name() method to allow you to identify an

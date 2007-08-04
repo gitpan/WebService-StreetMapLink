@@ -15,14 +15,14 @@ not run its Makefile.PL or Build.PL.
 Hash: SHA1
 
 SHA1 74e872e38cb1fc8a66cdd5880f1d7e0f5add1958 Build.PL
-SHA1 8ddddc0180b6ab384324c89e8247ddb254255e1e Changes
+SHA1 04b30a284dcc87fe58a65fb85c8a1d47bf1260e1 Changes
 SHA1 f235ba4160673bcb7c9d58c2f09dbc7fc0efadea LICENSE
 SHA1 24ed0110021652e8fab03c57b2ae97fe0e61886b MANIFEST
-SHA1 46dfb3f08c03c1b43134052e3276efbcd5b62121 META.yml
+SHA1 0bb9385eaff4b9930f687a6651be208384e2f4e8 META.yml
 SHA1 cd14ada78fb37a0d926edd86eddcdf7f939de582 Makefile.PL
 SHA1 06cbc0877c6a30aa67f1e680c1e4f63e669a00ce README
-SHA1 fa3cce59a1bc4e9e30e0edb5bb6461ae21645a7e lib/WebService/StreetMapLink.pm
-SHA1 f03b2166f6d241bf7f767bc7702585958b4cc1da lib/WebService/StreetMapLink/Google.pm
+SHA1 01933eb35030e1cc889f0845c714173a93e3bc51 lib/WebService/StreetMapLink.pm
+SHA1 e84eec97639042ba991ab14e5c5ac017312623a4 lib/WebService/StreetMapLink/Google.pm
 SHA1 823c72b13b3be914e688ba626a02e70b0a7f9530 lib/WebService/StreetMapLink/MapQuest.pm
 SHA1 1a4c220f99ce9361d9e401b46673f9a22e877c60 t/01-mapquest.t
 SHA1 0ef216af514850cce4fcb69e7ad4728d4e4ea59e t/05-google.t
@@ -33,7 +33,7 @@ SHA1 e9c6a5881fc60173fbc8d479c1afd2ce3b43bef1 t/pod.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.6 (GNU/Linux)
 
-iD8DBQFGtMtS3Or3ZzQuifMRAnILAJ9d29pxDzOTMZ3MJafhDHT1KM1ZUgCg1/u5
-0Z/7DOk43UKtHqENYjC7cuc=
-=Js3s
+iD8DBQFGtNOn3Or3ZzQuifMRAgZaAKC04wKunMddv7/XTn0C7Xb3Wm1GUwCg0F6X
+aJAPrV54q41qMMQqVHpObxk=
+=dXUN
 -----END PGP SIGNATURE-----

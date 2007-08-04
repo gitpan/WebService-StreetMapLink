@@ -16,10 +16,17 @@ my @Accents = ( [ qr/[\xE0-\xE2]/ => 'a' ],
 
 sub Countries
 {
-    return qw( australia belgium canada france germany
-               italy netherlands singapore spain
-               switzerland uk usa
-             );
+    return ( qw( australia austria belgium
+                 canada denmark
+                 france germany hungary
+                 italy netherlands
+                 singapore spain
+                 sweden switzerland
+                 uk usa
+              ),
+             'czech republic',
+             'puerto rico'
+           );
 }
 
 sub Priority { 99 }
