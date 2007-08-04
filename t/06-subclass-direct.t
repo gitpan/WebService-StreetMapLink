@@ -1,10 +1,12 @@
 #!/usr/bin/perl -w
 
 use strict;
+use warnings;
 
-use Test::More tests => 2;
+use Test::More tests => 1;
 
-use_ok('WebService::StreetMapLink::MapQuest');
+use WebService::StreetMapLink::MapQuest;
+
 
 my $map =
     WebService::StreetMapLink::MapQuest->new

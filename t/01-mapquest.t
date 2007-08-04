@@ -1,8 +1,9 @@
 #!/usr/bin/perl -w
 
 use strict;
+use warnings;
 
-use Test::More tests => 27;
+use Test::More tests => 28;
 
 use WebService::StreetMapLink;
 
@@ -17,6 +18,8 @@ use URI::QueryParam;
                                               postal_code => '12345',
                                               subclass => 'MapQuest',
                                             );
+
+    is( $map->service_name, 'MapQuest', 'service_name is MapQuest' );
 
     my $uri = $map->uri;
 

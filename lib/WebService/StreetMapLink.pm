@@ -4,7 +4,7 @@ use strict;
 
 use vars qw($VERSION);
 
-$VERSION = 0.10;
+$VERSION = 0.2;
 
 use Class::Factory::Util;
 use URI;
@@ -89,12 +89,12 @@ sub _sanitize_country
     shift;
     my $country = shift;
 
-    if ( $country =~ /united\s+states/i )
+    if ( $country =~ /united\s+states|u\.s\.(?:a\.)?/i )
     {
         $country = 'usa';
     }
 
-    if ( $country =~ /united\s+kingdom/i )
+    if ( $country =~ /united\s+kingdom|u\.k\./i )
     {
         $country = 'uk';
     }
@@ -131,6 +131,15 @@ sub _scheme { $_[0]->{scheme} ? $_[0]->{scheme} : 'http' }
 sub _host  { $_[0]->{host} }
 sub _path  { $_[0]->{path} }
 sub _query { $_[0]->{query} }
+
+sub service_name
+{
+    my $self = shift;
+
+    my $class = ref $self || $self;
+
+    return ( split /::/, $class )[-1];
+}
 
 
 1;
@@ -217,6 +226,11 @@ This method returns a string containing the URI of the map link.
 
 This method returns a URI object representing the map link.
 
+=head2 service_name()
+
+The name of the service being used for the map, like 'Google' or
+'MapQuest'.
+
 =head1 SUBCLASSING
 
 Creating a subclass that implements map links is quite simple.  The
@@ -250,6 +264,11 @@ keys of the object.  The C<_scheme()> method will default to "http".
 
 You are free to override any of these methods in your subclass.
 
+=head2 service_name()
+
+This will default to the unique part of your subclass, but you can
+override this to return any string.
+
 =head1 LEGAL BITS
 
 Please check with each service provider regarding their terms of
@@ -275,7 +294,7 @@ be notified of progress on your bug as I make changes.
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2004-2005 David Rolsky, All Rights Reserved.
+Copyright 2004-2007 David Rolsky, All Rights Reserved.
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.

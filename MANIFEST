@@ -1,23 +1,17 @@
 Build.PL
 Changes
 lib/WebService/StreetMapLink.pm
-lib/WebService/StreetMapLink/Catcha.pm
 lib/WebService/StreetMapLink/Google.pm
 lib/WebService/StreetMapLink/MapQuest.pm
-lib/WebService/StreetMapLink/Multimap.pm
-lib/WebService/StreetMapLink/Streetdirectory.pm
 LICENSE
 Makefile.PL
 MANIFEST			This list of files
 META.yml
 README
-t/00-load.t
 t/01-mapquest.t
-t/02-multimap.t
-t/03-streetdirectory.t
-t/04-catcha.t
 t/05-google.t
 t/06-subclass-direct.t
+t/07-sanitize-country.t
 t/pod-coverage.t
 t/pod.t
 SIGNATURE    Added here by Module::Build

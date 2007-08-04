@@ -1,6 +1,6 @@
 ---
 name: WebService-StreetMapLink
-version: 0.1
+version: 0.2
 author:
   - 'David Rolsky <autarch@urth.org>'
 abstract: An API for generating links to online map services
@@ -18,18 +18,12 @@ build_requires:
 provides:
   WebService::StreetMapLink:
     file: lib/WebService/StreetMapLink.pm
-    version: 0.1
-  WebService::StreetMapLink::Catcha:
-    file: lib/WebService/StreetMapLink/Catcha.pm
+    version: 0.2
   WebService::StreetMapLink::Google:
     file: lib/WebService/StreetMapLink/Google.pm
   WebService::StreetMapLink::MapQuest:
     file: lib/WebService/StreetMapLink/MapQuest.pm
-  WebService::StreetMapLink::Multimap:
-    file: lib/WebService/StreetMapLink/Multimap.pm
-  WebService::StreetMapLink::Streetdirectory:
-    file: lib/WebService/StreetMapLink/Streetdirectory.pm
-generated_by: Module::Build version 0.28
+generated_by: Module::Build version 0.2807
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html
   version: 1.2

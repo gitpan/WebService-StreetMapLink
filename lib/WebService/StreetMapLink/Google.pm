@@ -14,7 +14,13 @@ my @Accents = ( [ qr/[\xE0-\xE2]/ => 'a' ],
                 [ qr/\xF4/        => 'o' ],
               );
 
-sub Countries { 'usa', 'uk', 'canada' }
+sub Countries
+{
+    return qw( australia belgium canada france germany
+               italy netherlands singapore spain
+               switzerland uk usa
+             );
+}
 
 sub Priority { 99 }
 
@@ -60,6 +66,8 @@ sub new
                    query => { q => $q }
                  }, $class;
 }
+
+sub service_name { 'Google Maps' }
 
 
 1;
@@ -114,7 +122,7 @@ be notified of progress on your bug as I make changes.
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2004-2005 David Rolsky, All Rights Reserved.
+Copyright 2004-2007 David Rolsky, All Rights Reserved.
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
